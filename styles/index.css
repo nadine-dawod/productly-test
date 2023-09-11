@@ -1,0 +1,224 @@
+/* OVERALL STYLING FOR RECURRENT ELEMENTS */
+
+p { 
+    color: #544837;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px
+}
+
+.btn--filled {
+    width: 102px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background:  rgb(255, 153, 0);
+    border:none;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.btn--filled:hover {
+    opacity: 0.5;
+    transform: scale(1.5);
+}
+
+/* HEADER */
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.header__logo {
+    margin-top: 20px;
+    width: 143.117px;
+    height: 28.973px;
+    flex-shrink: 0;
+    transform: translate(80px,40px);
+}
+
+.header__link {
+    text-decoration: none;
+    color: #2F281E;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px
+}
+
+.header__btn--unfilled {
+    width: 102px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #BCD0E5;
+    color: #173A56;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.header__btn--unfilled:hover {
+    transform: rotate(180deg);
+}
+
+/* SECTION 1 */
+
+.section-1 {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.sec1__header {
+    color: #2F281E;
+    font-family: 'Poppins', sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+}
+
+.icon--triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 11px solid transparent;
+    border-left: 17px solid rgb(255, 153, 0);
+    border-bottom: 11px solid transparent;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.link-video {
+    color: #F90;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.sec1__img {
+    width: 467px;
+    height: 438px;
+    flex-shrink: 0;
+}
+
+/* SECTION 2 */
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sec2__header--large {
+    color: #2F281E;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sec2__columns {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.square--purple, .square--yellow, .square--red, .square--blue {
+    width: 50px;
+    height: 50px;
+    border-radius: 19px;
+}
+.square--purple {background-color: rgba(119, 82, 190, 1);}
+.square--yellow {background-color: rgba(250, 176, 5, 1);}
+.square--red {background-color: rgba(240, 62, 61, 1);} 
+/* I have tried different ways to center the heart in the red square:
+- .square--red--text {position: relative; top: 15px; left:15px;} 
+- .square--red {display: flex; justify-content: center; align-items: center;}
+- .square--red--text {text-align: center; transform:translateY(10px);} 
+I have tried putting the heart in a <div> and a <p> in all three options above.
+Neither option actually centers the heart completely - do you have any tips? Which option is preferable?*/
+.square--red--text {position: relative; top: 15px; left:15px;}
+.square--blue {background-color: rgba(77, 173, 247, 1);}
+
+.sec2__header-small {
+    color: #2F281E;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.sec2__para {
+    color: #544837;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+.section-2 .btn--filled {
+    width: 175px;
+    height: 53px;
+    flex-shrink: 0;    
+}
+
+/* SECTION 3 */
+.section-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sec3__header--large {
+    color: #2F281E;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sec3__header--small {
+    color: #2F281E;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.sec3__para {
+    color: #544837;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.sec3__img {
+    width: 519.785px;
+    height: 573.31px;
+    flex-shrink: 0;
+}
