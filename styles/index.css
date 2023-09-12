@@ -307,16 +307,31 @@ Neither option actually centers the heart completely - do you have any tips? Whi
 /* FOOTER */
 
 .footer {
-
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
 }
 
-.footer__img {}
+.footer__logo {
+    width: 142.348px;
+    height: 28.973px;
+    flex-shrink: 0;
+}
 
-.footer__columns {}
+.footer__header {
+    color: #2F281E;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
 
-.footer__header{}
-
-.footer__para{}
-
-
-.footer,.btn--filled {}
+.footer__para {
+    color: #544837;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+}
